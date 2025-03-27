@@ -60,19 +60,19 @@ The plugin is configured in the `Corefile` as follows:
 
 ## Configuration Parameters
 
-namespace (required): Specifies the Kubernetes namespace where the target Service resides.
+- `namespace` (required): Specifies the Kubernetes namespace where the target Service resides.
 
-service_name (required): The name of the Service to which DNS queries will be forwarded.
+- `service_name` (required): The name of the Service to which DNS queries will be forwarded.
 
-port_name: The name of the port in the Service resource responsible for handling DNS queries.
+- `port_name`: The name of the port in the Service resource responsible for handling DNS queries.
 
-expire: Time after which cached connections expire. Default is 10s.
+- `expire`: Time after which cached connections expire. Default is 10s.
 
-health_check: Interval for health checking of upstream servers. Default is 0.5s.
+- `health_check`: Interval for health checking of upstream servers. Default is 0.5s.
 
-force_tcp: Forces the use of TCP for forwarding queries.
+- `force_tcp`: Forces the use of TCP for forwarding queries.
 
-prefer_udp: Prefers the use of UDP for forwarding queries.
+- `prefer_udp`: Prefers the use of UDP for forwarding queries.
 
 ## Limitations
 
